@@ -29,13 +29,14 @@ Labels are given as below:
 ![Competition banner](images/labels.png)
 
 The labels in this dataset are simple. There are three possible values:
-`functional` - the waterpoint is operational and there are no repairs needed
-`functional needs repair` - the waterpoint is operational, but needs repairs
-`non functional` - the waterpoint is not operational
+`functional` - the waterpoint is operational and there are no repairs needed.
+`functional needs repair` - the waterpoint is operational, but needs repairs.
+`non functional` - the waterpoint is not operational.
 
 #### Evaluation Metric
 
-Classification Rate =1N∑Ni=0I(yi=yi^)
+Classification Rate = \frac{1}{N} \sum_{i=0}^N I(y_i = \hat{y_i}).
+
 The metric used for this competition is the classification rate, which calculates the percentage of rows where the 
 predicted class y^ in the submission matches the actual class, y in the test set. The maximum is 1 and the minimum is 0. 
 The goal is to maximize the classification rate.
